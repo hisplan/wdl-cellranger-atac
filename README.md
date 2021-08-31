@@ -1,26 +1,43 @@
 # wdl-cellranger-atac
 
-WDLized Cell Ranger ATAC
+WDLized Cell Ranger ATAC Pipeline
 
-## Reference Package
+## Setup
 
-- GRCh38 Reference - 2020-A-2.0.0 (May 3, 2021): https://cf.10xgenomics.com/supp/cell-atac/refdata-cellranger-arc-GRCh38-2020-A-2.0.0.tar.gz
-- mm10 Reference - 2020-A-2.0.0 (May 3, 2021): https://cf.10xgenomics.com/supp/cell-atac/refdata-cellranger-arc-mm10-2020-A-2.0.0.tar.gz
+The pipeline is a part of SCING (Single-Cell pIpeliNe Garden; pronounced as "sing" /siŋ/). For setup, please refer to [this page](https://github.com/hisplan/scing). All the instructions below is given under the assumption that you have already configured SCING in your environment.
 
-## How to Submit a Job
+## Create Job Files
 
-```bash
-./submit.sh \
-    -k ~/keys/cromwell-secrets-aws-nvirginia.json \
-    -i configs/atac_pbmc_500_v1.inputs.json \
-    -l configs/atac_pbmc_500_v1.labels.json \
-    -o CellRangerATAC.options.aws.json
-```
+You need two files for processing a V(D)J sample - one inputs file and one labels file. Use the following example files to help you create your configuration file:
 
-## Multiome
+- `config/template.inputs.json`
+- `config/template.labels.json`
+
+### Reference
+
+Use one of the URLs below for the reference genome:
+
+Type       | `CellRangerATAC.reference`
+---------- | ---------------------------------------------------------------------------------------------
+GRCh38     | `https://cf.10xgenomics.com/supp/cell-atac/refdata-cellranger-arc-GRCh38-2020-A-2.0.0.tar.gz`
+mm10       | `https://cf.10xgenomics.com/supp/cell-atac/refdata-cellranger-arc-mm10-2020-A-2.0.0.tar.gz`
+
+### Multiome
 
 If you want to process the ATAC product of the multiome using Cell Ranger ATAC v2 (i.e. without GEX), you must set the following in the job config file:
 
 ```json
 "CellRangerATAC.chemistry": "ARC-v1"
+```
+
+## Submit Your Job
+
+```bash
+conda activate scing
+
+./submit.sh \
+    -k ~/keys/cromwell-secrets.json \
+    -i configs/your-sample.inputs.json \
+    -l configs/your-sample.labels.json \
+    -o CellRangerATAC.options.aws.json
 ```
