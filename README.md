@@ -10,8 +10,8 @@ The pipeline is a part of SCING (Single-Cell pIpeliNe Garden; pronounced as "sin
 
 You need two files for processing a V(D)J sample - one inputs file and one labels file. Use the following example files to help you create your configuration file:
 
-- `config/template.inputs.json`
-- `config/template.labels.json`
+- `configs/template.inputs.json`
+- `configs/template.labels.json`
 
 ### Reference
 
