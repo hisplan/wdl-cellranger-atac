@@ -1,0 +1,9 @@
+{
+    "pipelineType": "CellRangerATAC",
+    "project": "tiny_atac",
+    "sample": "tiny_atac",
+    "owner": "chunj",
+    "destination": "s3://dp-lab-gwf-core/outputs/cr-atac-results/",
+    "transfer": "skip",
+    "comment": ""
+}

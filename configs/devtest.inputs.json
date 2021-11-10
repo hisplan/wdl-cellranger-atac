@@ -1,0 +1,19 @@
+{
+    "CellRangerATAC.sampleName": "tiny_atac",
+    "CellRangerATAC.fastqNames": "testfastq",
+    "CellRangerATAC.fastqFiles": [
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L001_I1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L001_R1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L001_R2_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L001_R3_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L002_I1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L002_R1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L002_R2_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L002_R3_001.fastq.gz"
+    ],
+    "CellRangerATAC.referenceGenome": {
+        "name": "tiny_atac",
+        "location": "https://dp-lab-test.s3.amazonaws.com/tiny/atac_testrun_ref/refdata-atac-tiny.tar.gz"
+    },
+    "CellRangerATAC.dockerRegistry": "quay.io/hisplan"
+}
