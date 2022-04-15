@@ -1,11 +1,11 @@
 {
-    "Count.sampleName": "atac_pbmc_500_v1",
-    "Count.fastqNames": "atac_pbmc_500_v1",
+    "Count.sampleName": "tiny_atac",
+    "Count.fastqNames": "testfastq",
     "Count.fastqFiles": [
-        "s3://dp-lab-home/chunj/scATAC-seq/v1.2-vanilla/atac_pbmc_500_v1_fastqs/atac_pbmc_500_v1_S1_L001_I1_001.fastq.gz",
-        "s3://dp-lab-home/chunj/scATAC-seq/v1.2-vanilla/atac_pbmc_500_v1_fastqs/atac_pbmc_500_v1_S1_L002_I1_001.fastq.gz",
-        "s3://dp-lab-home/chunj/scATAC-seq/v1.2-vanilla/atac_pbmc_500_v1_fastqs/atac_pbmc_500_v1_S1_L001_R1_001.fastq.gz",
-        "s3://dp-lab-home/chunj/scATAC-seq/v1.2-vanilla/atac_pbmc_500_v1_fastqs/atac_pbmc_500_v1_S1_L002_R1_001.fastq.gz"
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L001_I1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L001_R1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L001_R2_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_atac_tiny_fastq/1.0.0/testfastq_S1_L001_R3_001.fastq.gz"
     ],
     "Count.referenceGenome": {
         "name": "GRCh38-2020-A-2.0.0",
