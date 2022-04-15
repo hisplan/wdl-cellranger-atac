@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 wf_name="cellranger-atac"
-version="2.0.0"
+version="2.1.0"
 files="submit.sh CellRangerATAC.deps.zip CellRangerATAC.wdl CellRangerATAC.options.aws.json configs/template.*.json"
 dest="$HOME/scing/bin"
 
