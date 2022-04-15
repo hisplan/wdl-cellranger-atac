@@ -5,5 +5,5 @@
     "owner": "chunj",
     "destination": "s3://dp-lab-gwf-core/outputs/atac_pbmc_500_v1/cr-atac-results/",
     "transfer": "-",
-    "comment": "CellRanger ATAC"
+    "comment": ""
 }
